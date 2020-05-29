@@ -1,5 +1,5 @@
 {
-    "baseUrl": ".",
+    "baseUrl": "..",
     "topicDiv": "result",
     "searchDiv": "search",
     "tocTreeContainerDiv": "tocresult",
