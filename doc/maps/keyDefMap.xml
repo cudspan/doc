@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<map>
+
+    <data name="dv_attr">audience</data>
+    <data name="dv_vals">Cisco Verizon</data>
+
+    <keydef keys="Product_Short">
+        <topicmeta>
+            <keywords>
+                <keyword>Turbonomic</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <keydef keys="Company">
+        <topicmeta>
+            <keywords>
+                <keyword>Turbonomic</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+</map>
