@@ -235,9 +235,11 @@ angular.module('vmturbo.doc.transformService', []).factory('transformService', [
 
         return {
             setBaseUrl(s) {
+                console.log("Setting Base URL: "+s);
                 _baseUrl = s;
             },
             getBaseUrl() {
+                console.log("Getting Base URL: "+_baseUrl);
                 return _baseUrl;
             },
             /**
