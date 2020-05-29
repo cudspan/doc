@@ -8,7 +8,7 @@ angular.module('vmturbo.doc.transformService', []).factory('transformService', [
     'keyrefProcessService',
     'docUtils',
     function($http, $q, conrefService, keyrefProcessService, docUtils) {
-        let _baseUrl = '../doc/';
+        let _baseUrl = './doc/';
         const _walkthroughXsl = 'xsl/walkthroughBasic.xsl';
 
         /**
