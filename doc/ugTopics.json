@@ -1,5 +1,5 @@
 {
     "DEFAULT_DEDICATED": {
-        "topic": "7.21_Install/_INSTALL_Topics/TOPIC_Introduction.xml"
+        "topic": "./_INSTALL_Topics_K8s/TOPIC_Introduction_K8s.xml"
     }
 }
