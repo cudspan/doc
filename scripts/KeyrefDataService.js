@@ -57,9 +57,13 @@
             // configured baseUrl if such a thing is there.
             //
             if (this._$window.conf && this._$window.conf.baseUrl) {
+                console.log("BASE URL IS: "+this._$window.conf.baseUrl);
                 this._transformService.setBaseUrl(this._$window.conf.baseUrl);
                 this._conrefService.setBaseUrl(this._$window.conf.baseUrl);
             }
+            
+            console.log("TRYING TO TRANSFORM FILE: "+keyFile);
+            console.log("USING TRANSFORM: "+keyTransform);
             this._transformService.transformFile(
                 keyFile,
                 keyTransform,
