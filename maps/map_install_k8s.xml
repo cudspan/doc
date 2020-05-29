@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[
+<!ENTITY Product_Short "Turbonomic">
+<!ENTITY Version "7.13">
+]>
+
+<map title="Installing &Product_Short; &Version; on Kubernetes">
+  <!--  This makes rebranding work in FrameMaker when generating PDFs.  -->
+
+  <keydef keys="Product_Short">
+    <topicmeta>
+      <keywords>
+        <keyword>Turbonomic</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Company">
+    <topicmeta>
+      <keywords>
+        <keyword>Turbonomic</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+
+<!--
+  <topicref href="../_INSTALL_Topics_XL_k8s_OLD/TOPIC_Installing_on_k8s.xml" 
+    type="topic" navtitle="Installing  #KEY_WORD:Product_Short# on Kubernetes" /> 
+  -->
+  
+  <topicref href="../_INSTALL_Topics_K8s/TOPIC_Introduction_K8s.xml" 
+    type="topic" navtitle="Introduction" /> 
+  
+  <topicref href="../_INSTALL_Topics_K8s/TOPIC_Archetecture_K8s.xml" 
+    type="topic" navtitle="Architecture" /> 
+  <!--
+  <topicref href="../_INSTALL_Topics_K8s/TOPIC_Archetecture_K8s.xml" 
+    type="topic" navtitle="Woof Doggy Doesn't WOrk!" /> 
+  -->
+  
+</map>

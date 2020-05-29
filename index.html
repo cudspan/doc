@@ -1,10 +1,109 @@
+<!DOCTYPE html>
 <html>
-  <script>
-    var doIt = function() {
-      alert("WOOF!!!");
-    }
-  </script>
-<body onload="doIt()">
-<h1>ARF YOU DOG</h1>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <!-- Page title set in pageTitle directive -->
+    <title page-title>Turbonomic Help</title>
+
+    <!--build:css ./bundles/doc-styles.css-->
+    <link href="css/FourD_CSS/vmtHelp.css" rel="stylesheet" type="text/css"/>
+    <link href="css/FourD_CSS/ui.fancytree.css" rel="stylesheet" type="text/css"/>
+    <!--endbuild-->
+
+    <!-- Override fancytree css... -->
+    <style>
+        ul.fancytree-container {
+            border:none !important;
+            outline:none !important;
+            overflow: visible;
+        }
+        span.fancytree-expander {
+            background-image: url(css/FourD_CSS/icons.gif) !important;
+        }
+    </style>
+
+</head>
+
+<body id="appBody" ng-app="vmturbo.doc">
+
+<div id="angularThing" ng-controller="TopicCtrl as mainCtrl">
+    <nav class='banner'>
+        <div class="bannerbar" >
+            <img src="../assets/img/logos/logoInv.png" id="logo_image" style="width: 80%; max-width: 100px;"/>
+            <div class="titleHead">
+                <h4 class="revision"><font color="white"><span ng-bind-html="mainCtrl.helptitle"></span></font></h4>
+            </div>
+            <div class="buts">
+                <ul class="buts">
+                    <li class="butsLast"><a class="small_buts" id="forwardBut" ng-click="mainCtrl.goForward()" ><b>&gt;&gt;</b></a></li>
+                    <li class="buts"><a class="small_buts" id="backBut" ng-click="mainCtrl.goBack()" ><b>&lt;&lt;</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========= Topic Content... =========== -->
+    <section id="center">
+
+        <div id="topicDiv">
+            <article id ='topicArt' class="topic">
+                <div id="result" tabIdex="-1" ng-bind-html="mainCtrl.topiccontent"></div>
+            </article>
+        </div>
+    </section>
+
+    <div id="navList">
+        <ul id="menu">
+            <li class="tabbed" id="nav-1"><span  ng-click="mainCtrl.showDiv('toc')" class="Click">TOC</span></li>
+            <li class="tabbed" id="nav-2"><span  ng-click="mainCtrl.showDiv('search')" class="Click">Search</span></li>
+        </ul>
+        <span>
+            <div id="toc">
+                <p><span class="click" ng-click="mainCtrl.expandToc()">open all</span> |
+                    <span class="click" ng-click="mainCtrl.collapseToc()">close all</span></p>
+                <article class="navList">
+                    <div id="tocresult" tabIdex="-1" ></div>
+                </article>
+            </div>
+
+            <div id="search">
+                <search-directive id="searchDiv" class="navContent" searchobj="searchobj"/>
+            </div>
+        </span>
+    </div>
+</div>
+
+
+
+<!--build:js ./bundles/doc-plugins.js-->
+<script src="./assets/js/angular-1.6.6/angular.js"></script>
+<script src="./assets/js/angular-1.6.6/angular-cookies.js"></script>
+<script src="./assets/js/jquery/jquery-2.1.1.js"></script>
+<script src="./assets/js/plugins/jquery-ui/jquery-ui.js"></script>
+<script src="./assets/js/doc/jquery.fancytree-all.min.js"></script>
+<script src="./assets/js/doc/Stemmer.js"></script>
+<!--endbuild-->
+
+<!--build:js ./bundles/doc-lib.js-->
+<!-- Anglar App Scripts -->
+<script src="./scripts/doc.module.js"></script>
+<script src="./scripts/doc.controllers.js"></script>
+<script src="./scripts/TransformService.js"></script>
+<script src="./scripts/TocService.js"></script>
+<script src="./scripts/SearchService.js"></script>
+<script src="./scripts/ConrefService.js"></script>
+<script src="./scripts/HelpLaunchService.js"></script>
+<script src="./scripts/docUtils.js"></script>
+<script src="./scripts/ExtensionService.js"></script>
+<script src="./scripts/KeyrefProcessService.js"></script>
+<script src="./scripts/KeyrefDataService.js"></script>
+<script src="./scripts/doc.search.directive.js"></script>
+<!--endbuild-->
+
+
 </body>
-<html>
+</html>

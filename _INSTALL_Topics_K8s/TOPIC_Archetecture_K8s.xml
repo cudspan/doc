@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+"technicalContent/dtd/topic.dtd" [
+]>
+
+<topic id="Archetecture_K8s">
+  <title>Architecture and Prerequisites</title>
+
+  <body>
+    <p><ph keyref="Company"/>
+      is a containerized microservices platform that installs on a node cluster 
+      in a single namespace deployment. The platform uses Operator to deploy, manage and run 
+      the <ph keyref="Company"/> components. Operator includes a configuration file that you 
+      can use to adjust your setup.</p>
+    <p>As part of your deployment, you can take advantage of the backup and HA capabilities of 
+      a remote database service.
+    </p>
+    <fig>
+      <data name="audience" value="page"/>
+      <data name="scale" value="75"/>
+      <data name="alignment" value="left"/>
+      <image href="../graphics/K8s/K8s_Architecture_Generic.gif"/>
+    </fig>
+    
+    <section>
+      <title>Prerequisites</title>
+      <p>Not not  Ok</p>
+      
+      
+      
+    </section>
+    <simpletable outputclass="NoTitle" frame="all" relcolwidth="1* 1*" id="simpletable_o2j_tzt_flb">
+      <sthead>
+        <stentry/>
+        <stentry><p>Requirements</p></stentry>
+      </sthead>
+      <strow>
+        <stentry><p>Kubernetes Version</p></stentry>
+        <stentry><p>Kubernetes 1.11 or higher</p></stentry>
+      </strow>
+      <strow>
+        <stentry><p>Resources</p></stentry>
+        <stentry>
+          <ul audience="AWS">
+            <li><p>Nodes: 3 available capacity (what does this mean?)</p></li>
+            <li><p>Minimum Node Size: <codeph>m5.2xlarge, 20 GB disk</codeph></p></li>
+            <li><p>Memory Default: Limits 60 GB, 20 GB Requests</p></li>
+          </ul>
+        </stentry>
+      </strow>
+      <strow>
+        <stentry><p>Access</p></stentry>
+        <stentry>
+          <ul>
+            <li audience="AWS"><p>For cluster admin, use AWS cli and kubectl cli</p></li>
+            <li><p>Deployment of <ph keyref="Product_Short"/> is via Operator, running 
+            specific <codeph>cr.yaml</codeph> files.</p></li>
+          </ul>
+        </stentry>
+      </strow>
+      <strow>
+        <stentry><p>Network</p></stentry>
+        <stentry>
+          <p>Use AWS Elastic Load Balancing to optimize network utilization.</p>
+        </stentry>
+      </strow>
+      <strow>
+        <stentry><p>Ingress</p></stentry>
+        <stentry><p></p></stentry>
+      </strow>
+      <strow>
+        <stentry><p>Container Images</p></stentry>
+        <stentry><p></p></stentry>
+      </strow>
+      <strow>
+        <stentry><p>Storage</p></stentry>
+        <stentry><p></p></stentry>
+      </strow>
+      <strow>
+        <stentry><p>Remote DB (optional)</p></stentry>
+        <stentry><p></p></stentry>
+      </strow>
+    </simpletable>
+      
+
+  </body>
+</topic>

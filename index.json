@@ -1,0 +1,32 @@
+{
+    "baseUrl": ".",
+    "topicDiv": "result",
+    "searchDiv": "search",
+    "tocTreeContainerDiv": "tocresult",
+    "tocDiv": "toc",
+    "divsToTab": ["search", "toc"],
+
+    "comment_TransformData": "Locations for transform data...",
+    "mapTransform": "xsl/_DS_TREE_map_to_toc.xsl",
+    "topicTransform": "xsl/topicToWeb.xsl",
+    "searchTransform": "xsl/search.xsl",
+
+    "comment_DataFiles": "Data files for TOC and Search...",
+    "searchData": "search_install.xml",
+    "defaultMap": "maps/map_install_k8s.xml",
+    "searchFile": "data/search_install.xml",
+
+    "topicMap": "ugTopics.json",
+    "defaultMappedTopic": "DEFAULT_DEDICATED",
+
+    "helptitle": "&ensp;&emsp; Online Help",
+
+    "transform_params": [
+        { "name": "baseDir", "value": "." },
+        { "name": "graphicsRoot", "value": "." },
+        { "name": "dv_attr", "value": "audience" },
+        { "name": "dv_vals", "value": "Cisco Verizon XL" }
+    ],
+
+    "winStr": ""
+}

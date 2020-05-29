@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+"technicalContent/dtd/topic.dtd" [
+]>
+
+<topic id="InstallGuide_K8s">
+  <title>Introduction</title>
+
+  <body>
+    <p>Thank you for choosing <ph keyref="Company"/>, the Intelligent Workload Management
+    solution for Cloud and Virtualized Environments. This guide gives you
+    information you need to install <ph keyref="Product_Short"/> in your 
+      Kubernetes environment, install your license, and get started managing your
+    resources.</p>
+
+    <p>If you have any questions, please see our support site at
+    <codeph>https://support.turbonomic.com</codeph>.</p>
+
+    <p>Sincerely:</p>
+
+    <p/>
+
+    <p>The <ph keyref="Company"/> Team</p>
+  </body>
+</topic>

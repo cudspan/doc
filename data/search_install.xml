@@ -1,0 +1,16 @@
+<!-- DITA search database by DITA_SearchDb: 2020.01.29.12.18.42 -->
+<searchRoot>
+
+<searchRecord file="_INSTALL_Topics/AppendixA.xml" name="Appendix A:">
+<title>
+<content><w w="appendix" c="1"/><w w="a" c="1"/></content>
+</title>
+<body>
+<content><w w="appendix" c="1"/></content>
+</body>
+<keywords>
+<content></content>
+</keywords>
+</searchRecord>
+
+</searchRoot>
